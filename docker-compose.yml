@@ -1,0 +1,10 @@
+version: '2'
+
+services:
+  udacity:
+    image: udacity/carnd-term1-starter-kit
+    volumes:
+      - .:/src
+    ports:
+      - "8888:8888"
+    
