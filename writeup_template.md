@@ -70,13 +70,25 @@ Finally I combined the hough lines with the original image below:
 ### 2. Identify potential shortcomings with your current pipeline
 
 
-One potential shortcoming would be what would happen when ... 
+The biggest shortcoming of my pipeline is if the lane lines are curved the it does 
+not work. When I applied the pipeline to challenge video it creates weird lines.
+I did not understand how it draws the weird lines ot of the ROI.  
 
-Another shortcoming could be ...
+Another shortcoming is If the lines are not curved it works pretty good. But if the
+lines are not centered and one one of the lines is not in the ROI it could be a problem.
 
 
 ### 3. Suggest possible improvements to your pipeline
 
-A possible improvement would be to ...
+It is obvious that I need another calculation method of the lane lines. The hough transform works well for straight lines but not for curved lines. 
 
-Another potential improvement could be to ...
+Another imporovement could be to create a dynamic ROI calculation method for the straight lines which are out of the ROI.
+
+
+
+
+
+
+
+
+
